@@ -1,9 +1,11 @@
 const inquirer = require("inquirer");
-const SVG = require("./lib/svg.js");
+const {SVG} = require("./lib/svg.js");
 const { Circle, Triangle, Square } = require("./lib/shapes.js");
 const fs = require("fs");
 
+// cammoand line interface with one method
 class CLI {
+
   run() {
     return inquirer
       .prompt([
@@ -50,3 +52,5 @@ class CLI {
       })
   }
 }
+
+new CLI().run()
