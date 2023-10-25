@@ -3,7 +3,7 @@ const {SVG} = require("./lib/svg.js");
 const { Circle, Triangle, Square } = require("./lib/shapes.js");
 const fs = require("fs");
 
-// cammoand line interface with one method
+// cammand line interface with one method
 class CLI {
 
   run() {
@@ -45,7 +45,12 @@ class CLI {
         shape = new Triangle()
       }
        // wire class methods here together here
-        return fs.writeFileSync("newlogo.svg", svg.render());
+      shape.setColor(response.shapeColor)
+
+      let svg = new SVG()    //newSVG().setShape("circle").chooseText("SVG", "white")
+      svg.setShape(shape)
+      svg.chooseText(response.text, response.textColor)
+        return fs.writeFileSync("newlogo.svg", svg.build());
       })
       .then(() => {
         console.log("Generated logo!");
