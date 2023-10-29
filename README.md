@@ -6,7 +6,7 @@ Assignment 10 demonstrated the process of developing a generate logo by communic
 ![Alt text](Images/generatedlogo.png)
 
 ## URL
-https://github.com/ShahanAmeen/simple-logo, 
+https://github.com/ShahanAmeen/simple-logo, https://shahanameen.github.io/simple-logo/
 ## Author
 Shahan Ameen
 https://github.com/ShahanAmeen 
